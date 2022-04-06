@@ -28,90 +28,158 @@ export const useData = (collection) => {
         }
 
         return () => {
+            setItems([]);
             controller = false;
         }
     }, [update])
 
 
     const Add = async (item) => {
-        let list = [];
-        await DB.collection(collection).where('name', '==', item.name).get()
-            .then(elements => {
-                elements.forEach(el => {
-                    list.push(el.data());
-                });
-            })
 
-        if (list.length > 0) {
+        if (collection === "favorite") {
+            let list = [];
+            await DB.collection(collection).where('name', '==', item.name).get()
+                .then(elements => {
+                    elements.forEach(el => {
+                        list.push(el.data());
+                    });
+                })
 
-            try {
-                await DB.collection(collection).where('name', '==', item.name).get()
-                    .then(element => {
-                        element.forEach(doc => {
-                            doc.ref.update({
-                                id: doc.data().id,
-                                image: doc.data().image,
-                                name: doc.data().name,
-                                price: doc.data().price,
-                                tag: doc.data().tag,
-                                many: doc.data().many + 1
-                            })
-                        })
+
+            if (list.length === 0) {
+
+                try {
+                    await DB.collection(collection).add({
+                        id: uuidv4(),
+                        image: item.image,
+                        name: item.name,
+                        price: item.price || item.precio || 40,
+                        tag: item.tag,
                     })
 
-                setUpdate(!update);
+                    setUpdate(!update);
 
 
-                Swal.fire({
-                    title: `Added to ${collection}`,
-                    text: `your product has been added to ${collection} Again, check ${collection} tap`,
-                    icon: "success"
-                })
+                    Swal.fire({
+                        title: `Added to ${collection}`,
+                        text: `your product has been added to ${collection}, check ${collection} tap`,
+                        icon: "success"
+                    })
 
-            } catch (error) {
-                Swal.fire({
-                    title: `Error Adding to ${collection}`,
-                    text: `Opps something went Wrong`,
-                    icon: "error"
-                })
+                } catch (error) {
+                    Swal.fire({
+                        title: `Error Adding to ${collection}`,
+                        text: `Opps something went Wrong`,
+                        icon: "error"
+                    })
+                }
+
+
+            } else {
+
+                try {
+
+                    Swal.fire({
+                        title: `Item Already in ${collection}`,
+                        text: `your product is already on your favorites ${collection}, check ${collection} tap`,
+                        icon: "error"
+                    })
+
+
+                } catch (error) {
+                    Swal.fire({
+                        title: `Error Adding to ${collection}`,
+                        text: `Opps something went Wrong`,
+                        icon: "error"
+                    })
+                }
             }
-
 
         } else {
-
-            try {
-                await DB.collection(collection).add({
-                    id: uuidv4(),
-                    image: item.image,
-                    name: item.name,
-                    price: item.price || item.precio || 40,
-                    tag: item.tag,
-                    many: 1
+            let list = [];
+            await DB.collection(collection).where('name', '==', item.name).get()
+                .then(elements => {
+                    elements.forEach(el => {
+                        list.push(el.data());
+                    });
                 })
 
-                setUpdate(!update);
+            if (list.length > 0) {
+
+                try {
+                    await DB.collection(collection).where('name', '==', item.name).get()
+                        .then(element => {
+                            element.forEach(doc => {
+                                doc.ref.update({
+                                    id: doc.data().id,
+                                    image: doc.data().image,
+                                    name: doc.data().name,
+                                    price: doc.data().price,
+                                    tag: doc.data().tag,
+                                    many: doc.data().many + 1
+                                })
+                            })
+                        })
+
+                    setUpdate(!update);
 
 
-                Swal.fire({
-                    title: `Added to ${collection}`,
-                    text: `your product has been added to ${collection}, check ${collection} tap`,
-                    icon: "success"
-                })
+                    Swal.fire({
+                        title: `Added to ${collection}`,
+                        text: `your product has been added to ${collection} Again, check ${collection} tap`,
+                        icon: "success"
+                    })
+
+                } catch (error) {
+                    Swal.fire({
+                        title: `Error Adding to ${collection}`,
+                        text: `Opps something went Wrong`,
+                        icon: "error"
+                    })
+                }
 
 
-            } catch (error) {
-                Swal.fire({
-                    title: `Error Adding to ${collection}`,
-                    text: `Opps something went Wrong`,
-                    icon: "error"
-                })
+            } else {
+
+                try {
+                    await DB.collection(collection).add({
+                        id: uuidv4(),
+                        image: item.image,
+                        name: item.name,
+                        price: item.price || item.precio || 40,
+                        tag: item.tag,
+                        many: 1
+                    })
+
+                    setUpdate(!update);
+
+
+                    Swal.fire({
+                        title: `Added to ${collection}`,
+                        text: `your product has been added to ${collection}, check ${collection} tap`,
+                        icon: "success"
+                    })
+
+
+                } catch (error) {
+                    Swal.fire({
+                        title: `Error Adding to ${collection}`,
+                        text: `Opps something went Wrong`,
+                        icon: "error"
+                    })
+                }
             }
         }
+
     }
 
 
+
+
+
+
     const Remove = async (item) => {
-        if (item.many > 1) {
+        if (item.many && item.many > 1) {
             try {
                 await DB.collection(collection).where('name', '==', item.name).get()
                     .then(element => {

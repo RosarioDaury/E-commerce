@@ -49,7 +49,7 @@ export const Favorites = () => {
 
             <div className="slider1" ref={refSlider}>
                 <SliderDiv>
-                    {items && items?.map(item => <CardFavorites data={item} Remove={Remove} />)}
+                    {items && items?.map(item => <CardFavorites data={item} Remove={Remove} key={Math.random().toString(16).slice(2)} />)}
                 </SliderDiv>
             </div>
 

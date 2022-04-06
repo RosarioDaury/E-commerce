@@ -51,7 +51,7 @@ export const Shop = () => {
 
             <div className="slider1" ref={refSlider}>
                 <SliderDiv>
-                    {items && items?.map(item => <CardShop data={item} Remove={Remove} />)}
+                    {items && items?.map(item => <CardShop data={item} Remove={Remove} key={Math.random().toString(16).slice(2)} />)}
                 </SliderDiv>
             </div>
 

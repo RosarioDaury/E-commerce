@@ -112,7 +112,7 @@ export const DesktopLay = () => {
             </div>
 
             <div className="products">
-                {data?.map(data => <Card data={data} key={Math.floor(Math.random() * 10000)} Adding={Add} />)}
+                {data?.map(data => <Card data={data} key={Math.random().toString(16).slice(2)} Adding={Add} />)}
             </div>
 
             <div className="footer">

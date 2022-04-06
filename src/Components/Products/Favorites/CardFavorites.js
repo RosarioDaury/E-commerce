@@ -9,7 +9,7 @@ export const CardFavorites = ({ data, Remove }) => {
             <img src={data?.image} alt={data?.name} />
             <div className="data">
                 <h3>{data?.name}</h3>
-                <h4>{parseFloat(data?.precio || data?.price).toFixed(2)} US$ X{data.many}</h4>
+                <h4>{parseFloat(data?.precio || data?.price).toFixed(2)} US$</h4>
             </div>
             <div className="buy">
                 <div>
