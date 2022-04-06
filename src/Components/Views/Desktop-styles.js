@@ -137,15 +137,16 @@ export const Desk = styled.div`
             .right{
                 margin-right: 15px;
                 padding: 1rem;
-                background-color: white;
-                color: black;
+                background-color: black;
+                color: whites;
                 transition: all .3s ease-in-out;
             }
 
             .left:hover,
             .right:hover{
                 cursor: pointer;
-                background-color: grey;
+                background-color: whitesmoke;
+                color: black;
                 padding: 1.1rem;
             }
         }
@@ -160,7 +161,7 @@ export const Desk = styled.div`
         margin: 0 auto;
         grid-area: slider;
         overflow-x:scroll;
-        padding: 2rem;
+        padding: 0 2rem;
         background-image: url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;

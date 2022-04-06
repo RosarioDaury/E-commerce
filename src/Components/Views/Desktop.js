@@ -93,7 +93,6 @@ export const DesktopLay = () => {
             </div>
 
             <div className="slider-buttons">
-                <h2>All Products</h2>
                 <div>
                     <AiOutlineArrowLeft className="left" style={{ width: "60px", heigth: "60px" }} onClick={() => scrollPrev(ref.current)} />
                     <AiOutlineArrowRight className="right" style={{ width: "60px", heigth: "60px" }} onClick={() => scrollNext(ref.current)} />
