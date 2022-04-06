@@ -35,6 +35,9 @@ export const Div = styled.div`
     @media (max-width: 1200px){
         width: 130px;
         padding: 0;
+        font-size: .8rem;
+        text-align: center;
+
         img{
             width: 130px;
             height: 120px;
@@ -44,11 +47,13 @@ export const Div = styled.div`
         .data{
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         .buy{
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
     }
 

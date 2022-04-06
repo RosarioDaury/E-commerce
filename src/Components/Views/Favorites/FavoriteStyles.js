@@ -6,8 +6,12 @@ export const Div = styled.div`
         text-align: center;
         margin: 0 auto;
         grid-area: title;
-        background: rgb(233, 80, 80);
-        color: white;
+        background-image:linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
     }
 
     .slider1{
@@ -78,10 +82,15 @@ export const Div = styled.div`
 
     .slider1{
         grid-area: slider1;
-    }
-
-    .slider-title{
-        grid-area: title;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 2rem 2rem;
+        background-image:url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .navbarmobile{
@@ -90,6 +99,15 @@ export const Div = styled.div`
 
     .slider-buttons1{
         grid-area: buttons1;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 2rem;
+        background-image: linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 

@@ -56,12 +56,6 @@ export const Shop = () => {
             </div>
 
             <div className="footer">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
                 <Footer color="grey" />
             </div>
 
