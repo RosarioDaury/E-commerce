@@ -30,6 +30,7 @@ export const Header = styled.header`
             width: 50px;
             height: 50px;
             margin-right: 5rem;
+            align-self: center;
 
             :hover{
                 cursor: pointer;
@@ -44,6 +45,7 @@ export const Div = styled.div`
         width: 13%;
         margin-right: 6rem;
         color: black;
+
 
         h4:hover{
             cursor: pointer;
