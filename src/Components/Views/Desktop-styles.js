@@ -40,6 +40,12 @@ export const Desk = styled.div`
         grid-area: nav-bar;
         position: sticky;
         top: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .hidden{
+        opacity: 0;
+        visibility: hidden;
     }
     
     .nav-bar-mobile{

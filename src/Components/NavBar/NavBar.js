@@ -6,6 +6,7 @@ import { favorites, main, shop } from "../../Helpers/URLHelper";
 
 export const NavBar = () => {
     const navigate = useNavigate();
+
     return (
         <>
             <Header>

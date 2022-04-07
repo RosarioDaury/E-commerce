@@ -1,4 +1,4 @@
-import { useContext, useRef } from "react";
+import { useContext, useRef, useState } from "react";
 import { ProductsContext } from "../../Context/ProductsContext";
 import { Item } from "../Big/Item";
 import { Filter } from "../Filters/Filter";
@@ -18,10 +18,10 @@ import { useData } from "../Hooks/DataHooks";
 import { SpamOffer } from "../SpamOffer/Offer";
 import { Footer } from "../Footer/Footer";
 
-
 export const DesktopLay = () => {
     const { products, filterTag } = useContext(ProductsContext);
     const { Add } = useData('favorite');
+    const [header, setHeader] = useState(false);
 
     let data;
 
@@ -47,6 +47,14 @@ export const DesktopLay = () => {
 
     const ref = useRef();
 
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 1500) {
+            setHeader(true);
+        } else {
+            setHeader(false)
+        }
+    })
+
     return (
         <Desk>
             <Menu />
@@ -59,7 +67,7 @@ export const DesktopLay = () => {
                 <Top />
             </div>
 
-            <div className="nav-bar-desktop">
+            <div className={`nav-bar-desktop ${header ? "hidden" : ""}`} >
                 <NavBar />
             </div>
 
