@@ -5,11 +5,18 @@ export const Div = styled.div`
     justify-content: space-evenly;
     align-items: flex-end;
     width: 100vw;
-    height: 70px;
+    height: 80px;
     color: black;
     box-shadow: 2px 1px 1px 2px rgb(20, 20, 20, .2);
-    h4:hover,
-    h2:hover{
+    background-color: white;
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 1.87px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    h3:hover,
+    h5:hover{
         cursor: pointer;
         color: rgb(0, 0, 0, .2);
     }
@@ -21,5 +28,6 @@ export const Div = styled.div`
     @media (max-width: 1200px){
         flex-direction: column;
         height: auto;
+        align-items: center;
     }
 `

@@ -6,7 +6,7 @@ export const Div = styled.div`
         text-align: center;
         margin: 0 auto;
         grid-area: title;
-        background-image:linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image:linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -103,7 +103,7 @@ export const Div = styled.div`
         margin: 0 auto;
         box-sizing: border-box;
         padding: 0 2rem;
-        background-image: linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

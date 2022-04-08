@@ -26,7 +26,6 @@ export const Desk = styled.div`
     }
 
     .title-section{
-        font-size: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -63,10 +62,10 @@ export const Desk = styled.div`
             margin: 0 auto;
             font-weight: lighter;
             font-style: italic;
-            font-size: 1.3rem;
+            font-size: 1rem;
             box-sizing: border-box;
             padding: 0 2rem;
-            background-image: linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-image: linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -111,8 +110,8 @@ export const Desk = styled.div`
         grid-area: slider-title;
         text-align: left;
         color: black;
-        font-size: 1.1rem;
-        background-image: linear-gradient(rgb(250, 250, 250, .7), rgb(250, 250, 250, .7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        font-size: 1rem;
+        background-image: linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -143,15 +142,15 @@ export const Desk = styled.div`
             .right{
                 margin-right: 15px;
                 padding: 1rem;
-                background-color: black;
-                color: whites;
+                background-color: white;
+                color: black;
                 transition: all .3s ease-in-out;
             }
 
             .left:hover,
             .right:hover{
                 cursor: pointer;
-                background-color: whitesmoke;
+                background-color: grey;
                 color: black;
                 padding: 1.1rem;
             }
@@ -167,7 +166,7 @@ export const Desk = styled.div`
         margin: 0 auto;
         grid-area: slider;
         overflow-x:scroll;
-        padding: 0 2rem;
+        padding: 2rem 2rem;
         background-image: url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
@@ -185,7 +184,7 @@ export const Desk = styled.div`
         }
 
 
-        @media (min-width: 1200px){
+        @media (max-width: 1200px){
             &::-webkit-scrollbar{
                 background-color: transparent;
             }
@@ -193,6 +192,7 @@ export const Desk = styled.div`
             &::-webkit-scrollbar-thumb{
                 background-color: transparent;
             }
+
         }
     }
 
@@ -202,14 +202,14 @@ export const Desk = styled.div`
 
     .products{
         grid-area: products;
-        width: 90vw;
+        width: 95vw;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: .1rem;
         justify-items: center;
-        gap: .8rem;
-        margin: 2rem auto;
         justify-content: center;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     @media (max-width: 1250px){

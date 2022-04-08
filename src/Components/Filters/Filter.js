@@ -7,11 +7,11 @@ export const Filter = () => {
 
     return (
         <Div>
-            <h2 onClick={() => setFilterTag("all")} className={filterTag === "all" ? "active" : ""}>Adidas</h2>
-            <h4 onClick={() => setFilterTag("sport")} className={filterTag === "sport" ? "active" : ""}>Sports</h4>
-            <h4 onClick={() => setFilterTag("casual")} className={filterTag === "casual" ? "active" : ""}>Casual</h4>
-            <h4 onClick={() => setFilterTag("baseball")} className={filterTag === "baseball" ? "active" : ""}>Baseball</h4>
-            <h4 onClick={() => setFilterTag("basketball")} className={filterTag === "basketball" ? "active" : ""}>Basketball</h4>
+            <h3 onClick={() => setFilterTag("all")} className={filterTag === "all" ? "active" : ""}>Adidas</h3>
+            <h5 onClick={() => setFilterTag("sport")} className={filterTag === "sport" ? "active" : ""}>Sports</h5>
+            <h5 onClick={() => setFilterTag("casual")} className={filterTag === "casual" ? "active" : ""}>Casual</h5>
+            <h5 onClick={() => setFilterTag("baseball")} className={filterTag === "baseball" ? "active" : ""}>Baseball</h5>
+            <h5 onClick={() => setFilterTag("basketball")} className={filterTag === "basketball" ? "active" : ""}>Basketball</h5>
         </Div>
     )
 }

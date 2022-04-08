@@ -1,18 +1,20 @@
 import styled from "styled-components"
 
 export const Div = styled.div`
-    max-width: 200px ;
+    width: 300px ;
     display: flex;
     flex-direction: column;
-    padding: .5rem;
     border: 1px solid rgb(20, 20, 20, .1);
-    background-image: linear-gradient(rgb(250, 250, 250, .5), rgb(250, 250, 250, .5)),url(https://i.pinimg.com/474x/71/88/d5/7188d5a86064bebddda1d4d97c38150a--adidas-sportswear-running-wear.jpg); 
+    background: white; 
     background-size: cover;
-    margin-bottom: 1rem;
+
+    &:hover{
+        border: 1px solid black;
+    }
 
     img{
         width: auto;
-        height: 200px;
+        height: 300px;
     }
 
     p{
@@ -23,6 +25,8 @@ export const Div = styled.div`
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: .3rem;
+        box-sizing: border-box;
     }
 
     .buy{
@@ -30,18 +34,18 @@ export const Div = styled.div`
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        box-sizing: border-box;
+        padding: 1rem;
     }
 
     @media (max-width: 1200px){
-        width: 130px;
-        padding: 0;
+        width: 175px;
         font-size: .8rem;
         text-align: center;
 
         img{
-            width: 130px;
-            height: 120px;
-            margin: 0 auto;
+            width: auto;
+            height: 170px;
         }
 
         .data{

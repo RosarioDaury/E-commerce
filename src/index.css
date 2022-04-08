@@ -5,6 +5,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(229, 227, 227); 
   overflow-x:hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 1.80px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 code {

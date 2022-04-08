@@ -8,7 +8,7 @@ export const Div = styled.div`
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 1px 2px 2px 3px rgb(20, 20, 20, .5);
-    background: rgb(250, 250, 250, .5);
+    background: rgb(250, 250, 250, .8);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
