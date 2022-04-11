@@ -54,7 +54,7 @@ export const Desk = styled.div`
     
     .items-big-1{
         text-align: left;
-        color: black;
+        color: white;
 
         .title-section,
         p{
@@ -65,7 +65,7 @@ export const Desk = styled.div`
             font-size: 1rem;
             box-sizing: border-box;
             padding: 0 2rem;
-            background-image: linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-image: linear-gradient(rgb(28, 29, 37, 0.7), rgb(28, 29, 37, 0.7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -94,7 +94,7 @@ export const Desk = styled.div`
     }
 
     .big{
-        background-image: url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(28, 29, 37, 0.5), rgb(28, 29, 37, 0.5)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -109,9 +109,9 @@ export const Desk = styled.div`
         margin: 0 auto;
         grid-area: slider-title;
         text-align: left;
-        color: black;
+        color: white;
         font-size: 1rem;
-        background-image: linear-gradient(rgb(250, 250, 250, .8), rgb(250, 250, 250, .8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(28, 29, 37, 0.7), rgb(28, 29, 37, 0.7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -125,7 +125,7 @@ export const Desk = styled.div`
         width: 100%;
         box-sizing: border-box;
         padding: 2rem;
-        background-image: url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(28, 29, 37, 0.5), rgb(28, 29, 37, 0.5)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -167,7 +167,7 @@ export const Desk = styled.div`
         grid-area: slider;
         overflow-x:scroll;
         padding: 2rem 2rem;
-        background-image: url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(28, 29, 37, 0.5), rgb(28, 29, 37, 0.5)), url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

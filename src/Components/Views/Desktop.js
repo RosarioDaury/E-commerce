@@ -95,7 +95,7 @@ export const DesktopLay = () => {
 
             <div className="slider-title">
                 <br />
-                <div className="title-section"><h2>Clothing</h2> <MdOutlineSportsBasketball style={{ marginLeft: "5px", color: "black", width: "50px", height: "50px" }} /></div>
+                <div className="title-section"><h2>Clothing</h2> <MdOutlineSportsBasketball style={{ marginLeft: "5px", color: "white", width: "50px", height: "50px" }} /></div>
                 <p>Through sports, we have the power to change lives. Sports keep us fit. They keep us mindful. They bring us together. adidas is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sporting goods, style and clothing that match the athletic needs, while keeping sustainability in mind. We are here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
                 <br />
             </div>
