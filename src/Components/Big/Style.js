@@ -67,6 +67,10 @@ export const Div = styled.div`
         height: auto;
         font-size: .8rem;
 
+        .text-big{
+            width: 100%;
+        }
+
         img{
             width: 100%;
             height: 300px; 
@@ -74,6 +78,7 @@ export const Div = styled.div`
         }
 
         .data{
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center;

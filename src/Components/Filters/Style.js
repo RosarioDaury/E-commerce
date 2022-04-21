@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Div = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
     width: 100vw;
     height: 80px;
@@ -14,6 +14,21 @@ export const Div = styled.div`
     letter-spacing: 1.87px;
     font-weight: 300;
     text-transform: uppercase;
+
+    .all-products {
+        width: 30%;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .filters {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-right: 10rem;
+    }
 
     h3:hover,
     h5:hover{
@@ -27,7 +42,13 @@ export const Div = styled.div`
 
     @media (max-width: 1200px){
         flex-direction: column;
-        height: auto;
+        height: 125px;
         align-items: center;
+
+        .filters{
+            width: 90%;
+            margin: 0;
+            font-size: .7rem;
+        }
     }
 `

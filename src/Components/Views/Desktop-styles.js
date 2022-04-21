@@ -65,7 +65,7 @@ export const Desk = styled.div`
             font-size: 1rem;
             box-sizing: border-box;
             padding: 0 2rem;
-            background-image: linear-gradient(rgb(28, 29, 37, 0.7), rgb(28, 29, 37, 0.7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-image: linear-gradient(rgb(28, 29, 37, 0.8), rgb(28, 29, 37, 0.8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -111,7 +111,7 @@ export const Desk = styled.div`
         text-align: left;
         color: white;
         font-size: 1rem;
-        background-image: linear-gradient(rgb(28, 29, 37, 0.7), rgb(28, 29, 37, 0.7)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: linear-gradient(rgb(28, 29, 37, 0.8), rgb(28, 29, 37, 0.8)),url(https://images.pexels.com/photos/4914808/pexels-photo-4914808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
