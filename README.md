@@ -2,7 +2,7 @@
 
 this Project is an implementation of a E-commerce (topic: clothes(sneakers mainly)). the main page is all the products divided by sections and kidna cards per each product, there is also an more pages o sections: one "favorites" tap and another corresponding to a Shopping Cart.
   
-bellow the information of every products you have icons that when you click on then you either add the poduct to the favorite tap or to the shopping cart (in the shoppng cat ou can add the same products as many times as you want to but in the favorite tap onl one time each product)
+bellow the information of every products you have icons that when you click on then you either add the poduct to the favorite tap or to the shopping cart (in the shoppng cart you can add the same products as many times as you want to but in the favorite tap only one time each product)
 
 this project was done using react.js totally right off the bat.
     
