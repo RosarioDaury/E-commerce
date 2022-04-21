@@ -9,8 +9,10 @@ export const Div = styled.div`
     height: auto;
     width: 100%;
     font-size: .8rem;
+    box-sizing: border-box;
 
     @media (max-width: 1200px){
-        font-size: .5rem;
+        font-size: .2rem;
+        text-align: center;
     }
 `
